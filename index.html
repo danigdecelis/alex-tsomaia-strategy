@@ -74,6 +74,12 @@ strong{color:var(--dark-mid);font-weight:600;}
 .chart-note{font-size:13px;color:var(--muted);line-height:1.55;margin-top:22px;text-align:center;max-width:580px;margin-left:auto;margin-right:auto;}
 .dark .chart-note{color:rgba(255,255,255,0.45);}
 .chart-lead{font-size:16px;line-height:1.7;max-width:640px;}
+.radar-legend{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;max-width:420px;margin:22px auto 0;}
+.rl-item{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:8px;}
+.rl-item span{color:rgba(255,255,255,0.7);font-size:13px;}
+.rl-item b{font-family:'Playfair Display',serif;font-size:18px;color:var(--gold);}
+.rl-item b.low{color:#D98A86;}
+@media (max-width:768px){.radar-legend{grid-template-columns:1fr;}}
 
 /* SMOKING GUN */
 .gun-card{background:rgba(255,255,255,0.04);border:1px solid var(--gold-border);border-radius:12px;padding:32px;margin-bottom:20px;}
@@ -226,10 +232,45 @@ footer{background:#0A0A0A;border-top:1px solid rgba(201,168,76,0.15);padding:48p
   </div>
 </section>
 
+<!-- CARD: RADAR -->
+<section class="card dark">
+  <div class="container">
+    <div class="label">01 · La forma de tu sistema</div>
+    <h2 style="color:#fff;">Tu embudo es bueno. El sistema a su alrededor, casi vacío</h2>
+    <p class="chart-lead" style="color:rgba(255,255,255,0.7);margin-bottom:36px;">Tu diagnóstico en una imagen. Cada punta es una dimensión de tu sistema, de 0 en el centro a 100 en el borde. Ojo con lo que mide: no tu funnel ni tu copy, sino lo que los rodea.</p>
+
+    <svg viewBox="0 0 320 280" width="100%" style="max-width:360px;display:block;margin:0 auto 8px;" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="160,45 255.1,114.1 218.8,225.9 101.2,225.9 64.9,114.1" fill="none" stroke="rgba(255,255,255,0.13)" stroke-width="1"/>
+      <polygon points="160,95 207.6,129.5 189.4,185.5 130.6,185.5 112.4,129.5" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="160" y2="45" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="255.1" y2="114.1" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="218.8" y2="225.9" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="101.2" y2="225.9" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="64.9" y2="114.1" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <polygon points="160,95 196.14,133.26 183.51,177.36 151.18,157.14 160,145" fill="rgba(201,168,76,0.28)" stroke="#C9A84C" stroke-width="2"/>
+      <circle cx="160" cy="95" r="3.5" fill="#C9A84C"/>
+      <circle cx="196.14" cy="133.26" r="3.5" fill="#C9A84C"/>
+      <circle cx="183.51" cy="177.36" r="3.5" fill="#C9A84C"/>
+      <circle cx="151.18" cy="157.14" r="3.5" fill="#D98A86"/>
+      <circle cx="160" cy="145" r="4" fill="#D98A86"/>
+    </svg>
+
+    <div class="radar-legend">
+      <div class="rl-item"><span>Recurrencia y recompra</span><b>50</b></div>
+      <div class="rl-item"><span>Medición</span><b>40</b></div>
+      <div class="rl-item"><span>Captación</span><b>38</b></div>
+      <div class="rl-item"><span>Arquitectura de conversión</span><b class="low">15</b></div>
+      <div class="rl-item"><span>Relación con tu lista</span><b class="low">0</b></div>
+    </div>
+
+    <p class="chart-note">Esto no mide tu VSL, tu oferta ni tu copy, que están bien. Mide el sistema que rodea a tu embudo: si capturas de verdad, si nutres, si mides. Y ahí la forma está casi hundida, con la relación a tu lista en cero y la arquitectura en 15. No es que lo hagas mal, es que todavía no lo has construido. Las dos fugas que vienen ahora son exactamente eso.</p>
+  </div>
+</section>
+
 <!-- CARD 4: MAPA DEL EMBUDO (CHART 1) -->
 <section class="card dark">
   <div class="container">
-    <div class="label">01 · El mapa de tu embudo</div>
+    <div class="label">02 · El mapa de tu embudo</div>
     <h2 style="color:#fff;">Ves la entrada. No ves dónde se hace el dinero</h2>
     <p class="chart-lead" style="color:rgba(255,255,255,0.7);margin-bottom:36px;">Tu embudo entero, de arriba abajo. En dorado, lo que mides. En oscuro, lo que va a ciegas. Fíjate en qué mitad está cada cosa.</p>
 
@@ -324,7 +365,7 @@ footer{background:#0A0A0A;border-top:1px solid rgba(201,168,76,0.15);padding:48p
 <!-- CARD 9: LA SALIDA -->
 <section class="card">
   <div class="container">
-    <div class="label">02 · La salida</div>
+    <div class="label">03 · La salida</div>
     <h2>El orden</h2>
     <p>A ti no te tengo que explicar cómo se hace cada cosa, sabes de esto. Lo que aporto es el orden y una mirada de fuera, sin el sesgo de estar dentro de tu propio embudo.</p>
     <div class="step-list">
