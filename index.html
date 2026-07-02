@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audit de tu embudo - Alex Tsomaia</title>
+<meta property="og:title" content="Audit de tu embudo - Alex Tsomaia">
+<meta property="og:description" content="La lectura completa de tu embudo Ads > Landing > VSL, con tus propias piezas delante, preparada por Copy Estratega.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png">
+<meta property="og:url" content="https://danigdecelis.github.io/alex-tsomaia-strategy/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Audit de tu embudo - Alex Tsomaia">
+<meta name="twitter:description" content="La lectura completa de tu embudo, con tus propias piezas delante, preparada por Copy Estratega.">
+<meta name="twitter:image" content="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png">
+<link rel="icon" type="image/png" href="https://storage.googleapis.com/gpt-engineer-file-uploads/ENnY1cQr8yb82cqirDaLRejSItf1/uploads/1759866240739-LeadLinker%20Logo%20Favicon%20.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<style>
+:root{
+  --gold:#C9A84C;
+  --gold-dark:#A8893A;
+  --gold-light:rgba(201,168,76,0.08);
+  --gold-border:rgba(201,168,76,0.2);
+  --dark:#0A0A0A;
+  --dark-mid:#1A1A1A;
+  --body-text:#555555;
+  --muted:#999999;
+  --off-white:#F8F6F0;
+  --white:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.75;color:var(--body-text);background:#fff;-webkit-font-smoothing:antialiased;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.15);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:flex-start;}
+.nav-logo img{height:36px;display:block;}
+
+.card{padding:80px 40px;border-bottom:1px solid rgba(0,0,0,0.05);}
+.card.dark{background:var(--dark);border-bottom:1px solid rgba(255,255,255,0.06);}
+.card.off-white{background:var(--off-white);}
+.container{max-width:800px;margin:0 auto;}
+
+.label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--gold);margin-bottom:16px;}
+
+h1{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(32px,5vw,52px);letter-spacing:-0.5px;line-height:1.1;color:#fff;}
+h2{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(26px,4vw,38px);letter-spacing:-0.3px;line-height:1.15;margin-bottom:20px;color:var(--dark-mid);}
+h3{font-family:'Inter',sans-serif;font-weight:700;font-size:20px;margin-bottom:12px;color:var(--dark-mid);}
+h4{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;color:var(--dark-mid);}
+.dark h2,.dark h3,.dark h4{color:#fff;}
+.dark p{color:rgba(255,255,255,0.7);}
+.off-white h2,.off-white h3{color:var(--dark-mid);}
+
+p{margin-bottom:18px;}
+p:last-child{margin-bottom:0;}
+strong{color:var(--dark-mid);font-weight:600;}
+.dark strong{color:#fff;}
+
+.hero-card{padding-top:140px;padding-bottom:100px;}
+.hero-card h1{margin-bottom:24px;}
+.hero-card .label{color:var(--gold);}
+.hero-subtitle{font-size:19px;color:rgba(255,255,255,0.7);line-height:1.6;max-width:680px;}
+.hero-meta{display:flex;gap:32px;margin-top:48px;padding-top:32px;border-top:1px solid rgba(201,168,76,0.2);flex-wrap:wrap;}
+.hero-meta-label{font-size:10px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;}
+.hero-meta-val{font-size:14px;color:#fff;font-weight:500;}
+
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;}
+.toc-item{background:var(--off-white);border:1px solid var(--gold-border);border-radius:6px;padding:16px 20px;}
+.toc-num{font-size:10px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:6px;}
+.toc-title{font-size:14px;font-weight:700;color:var(--dark-mid);margin-bottom:4px;}
+.toc-desc{font-size:12px;color:var(--muted);line-height:1.4;margin-bottom:0;}
+
+.chart-note{font-size:13px;color:var(--muted);line-height:1.55;margin-top:22px;text-align:center;max-width:580px;margin-left:auto;margin-right:auto;}
+.dark .chart-note{color:rgba(255,255,255,0.45);}
+.chart-lead{font-size:16px;line-height:1.7;max-width:640px;}
+
+/* SMOKING GUN */
+.gun-card{background:rgba(255,255,255,0.04);border:1px solid var(--gold-border);border-radius:12px;padding:32px;margin-bottom:20px;}
+.gun-card h3{color:#fff;margin-bottom:18px;}
+.gun-pair{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin-bottom:18px;}
+.gun-side{padding:20px 22px;}
+.gun-side.a{background:rgba(0,0,0,0.25);border-right:1px solid rgba(255,255,255,0.1);}
+.gun-side.b{background:rgba(192,80,77,0.12);}
+.gun-side-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;}
+.gun-side.a .gun-side-label{color:var(--gold);}
+.gun-side.b .gun-side-label{color:#E58B88;}
+.gun-side p{font-size:14px;line-height:1.55;color:rgba(255,255,255,0.85);margin-bottom:0;}
+.gun-read{font-size:15px;line-height:1.7;color:rgba(255,255,255,0.75);margin-bottom:0;}
+.gun-read strong{color:var(--gold);}
+
+/* FINDINGS */
+.finding-card{background:var(--off-white);border-radius:10px;padding:32px;margin-bottom:20px;border-left:4px solid var(--gold);}
+.finding-num{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;}
+.finding-card h3{margin-bottom:14px;}
+.finding-card p{font-size:15px;line-height:1.7;color:var(--body-text);margin-bottom:14px;}
+.finding-card p:last-child{margin-bottom:0;}
+.finding-evidence{margin-top:18px;padding-top:16px;border-top:1px solid rgba(0,0,0,0.08);font-size:13px;color:var(--muted);}
+.finding-evidence strong{color:var(--gold-dark);}
+
+/* MONEY / CHART CARD */
+.money-wrap{background:var(--off-white);border:1px solid var(--gold-border);border-radius:12px;padding:36px 32px 28px;margin-top:8px;}
+.money-headline{font-family:'Playfair Display',serif;font-size:clamp(24px,3.6vw,32px);font-weight:800;color:var(--gold-dark);text-align:center;margin-top:14px;}
+.money-sub{text-align:center;font-size:15px;color:var(--body-text);margin-top:6px;}
+
+.synthesis-quote{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;font-style:italic;color:var(--gold);line-height:1.4;margin:32px 0;padding:24px 0;border-top:1px solid var(--gold-border);border-bottom:1px solid var(--gold-border);}
+
+/* SOLUTION STEPS */
+.step-list{margin-top:28px;}
+.step-item{display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid rgba(0,0,0,0.06);}
+.step-item:last-child{border-bottom:none;}
+.step-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--gold);min-width:32px;line-height:1.2;}
+.step-content h4{margin-bottom:8px;font-size:16px;}
+.step-content p{font-size:14px;color:var(--body-text);line-height:1.65;margin-bottom:0;}
+
+/* GOOD LIST (lo que ya tienes) */
+.good-list{margin-top:24px;}
+.good-item{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid rgba(0,0,0,0.05);}
+.good-item:last-child{border-bottom:none;}
+.good-check{color:var(--gold);font-weight:800;font-size:16px;line-height:1.5;flex:0 0 auto;}
+.good-item p{font-size:15px;color:var(--body-text);line-height:1.6;margin:0;}
+.good-item strong{color:var(--dark-mid);}
+
+/* GUARANTEE */
+.guarantee-box{background:var(--gold-light);border:1px solid var(--gold-border);border-radius:12px;padding:40px;margin-top:8px;}
+.guarantee-box p{font-family:'Playfair Display',serif;font-size:clamp(20px,2.6vw,26px);font-weight:700;font-style:italic;color:var(--dark-mid);line-height:1.4;margin-bottom:0;}
+
+/* CTA */
+.cta-card{text-align:center;}
+.cta-card .divider{width:60px;height:2px;background:var(--gold);margin:0 auto 32px;}
+.cta-card h2{color:#fff;}
+.cta-card p{max-width:580px;margin-left:auto;margin-right:auto;}
+.cta-reply{font-size:18px;color:#fff;font-weight:500;margin:28px 0 8px;}
+.cta-or{font-size:12px;text-transform:uppercase;letter-spacing:3px;color:rgba(255,255,255,0.25);margin:24px 0;}
+.cta-btn{display:inline-block;border:1px solid var(--gold);color:var(--gold);background:transparent;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;padding:16px 36px;border-radius:6px;cursor:pointer;transition:all 0.2s;text-decoration:none;}
+.cta-btn:hover{background:var(--gold);color:#0A0A0A;}
+
+/* ABOUT */
+.about-card{background:#fff;border:1px solid var(--gold-border);border-radius:10px;padding:40px;display:flex;gap:28px;align-items:flex-start;}
+.about-photo{flex:0 0 80px;}
+.about-photo img{width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);}
+.about-body h3{margin-bottom:2px;}
+.about-role{font-size:13px;color:var(--gold-dark);font-weight:600;margin-bottom:16px;}
+.about-body p{font-size:15px;line-height:1.7;color:var(--body-text);}
+
+.transition-card{text-align:center;}
+.transition-card .label{display:block;margin-bottom:24px;}
+.divider{width:60px;height:2px;background:var(--gold);margin:0 auto 32px;}
+.transition-card h2{color:#fff;}
+
+footer{background:#0A0A0A;border-top:1px solid rgba(201,168,76,0.15);padding:48px 40px;text-align:center;}
+.footer-logo img{height:36px;display:block;margin:0 auto 20px;}
+.footer-text{font-size:12px;color:rgba(255,255,255,0.4);line-height:1.6;}
+
+@media (max-width:768px){
+  .card{padding:60px 24px;}
+  .hero-card{padding-top:120px;padding-bottom:80px;}
+  .hero-meta{gap:24px;}
+  .toc-grid{grid-template-columns:1fr;}
+  .gun-pair{grid-template-columns:1fr;}
+  .gun-side.a{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);}
+  .about-card{flex-direction:column;gap:20px;}
+  nav{padding:0 20px;}
+  .nav-logo img{height:30px;}
+  footer{padding:40px 24px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo"><img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega"></a>
+</nav>
+
+<!-- CARD 1: HERO -->
+<section class="card dark hero-card">
+  <div class="container">
+    <div class="label">Audit de embudo</div>
+    <h1>El audit de tu<br>embudo, Alex</h1>
+    <p class="hero-subtitle">Me pediste que mirara tu funnel de verdad en vez del test genérico, que a ti te sabe a poco con razón. Esto es. He recorrido tu anuncio, tu landing y tu VSL enteros. Y te lo digo como a un colega que sabe: tienes un buen embudo, y dos fugas concretas que valen dinero.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Negocio</div>
+        <div class="hero-meta-val">Equipos autónomos para dueños de negocio (Método Omega)</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Embudo</div>
+        <div class="hero-meta-val">Ads → Landing → VSL → Llamada</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Ticket</div>
+        <div class="hero-meta-val">2.000 a 5.000€</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Preparado por</div>
+        <div class="hero-meta-val">Daniel · Copy Estratega</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 2: QUE ES -->
+<section class="card">
+  <div class="container">
+    <div class="label">Antes de empezar</div>
+    <h2>Cómo he mirado esto</h2>
+    <p>Esto no es el diagnóstico automático. Es lo que tú mismo dijiste que te aportaría: yo, revisando tu embudo real, pieza a pieza.</p>
+    <p>He leído tu anuncio (con sus cinco hooks), tu landing de registro y tu VSL entero, los 37 slides. Así que aquí no hay teoría ni consejos de plantilla. Hay lo que veo en TU funnel, lo que está bien montado y lo que se te está escapando.</p>
+    <p>Y empiezo por lo primero, porque es de justicia: lo que tienes montado es bueno. Sobre eso van las dos fugas, que son de afinar, no de reconstruir.</p>
+  </div>
+</section>
+
+<!-- CARD 3: LO QUE YA TIENES -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">Punto de partida</div>
+    <h2>Lo que ya tienes bien montado</h2>
+    <p style="margin-bottom:8px;">No parto de cero contigo, y eso cambia todo. Esto es lo que veo que ya funciona:</p>
+    <div class="good-list">
+      <div class="good-item"><span class="good-check">✓</span><p><strong>Un avatar clarísimo.</strong> Tus hooks (Noelia, Jorge, Raquel, Marc, Virginia) apuntan todos al mismo cliente: dueño de negocio de 5 a 25 personas, saturado, con un equipo del que no se fía. Eso es puntería, y se nota que testeas.</p></div>
+      <div class="good-item"><span class="good-check">✓</span><p><strong>Un VSL sólido.</strong> Tiene mecanismo propio (el Método Omega: El Pacto, La Purga, El Orden), agita el dolor bien, mete prueba y cierra en llamada con criterio ("esta llamada no es para todo el mundo"). Está bien escrito.</p></div>
+      <div class="good-item"><span class="good-check">✓</span><p><strong>Prueba real.</strong> 5 años y más de 200 dueños de negocio. En un ticket de 2 a 5k, esa autoridad es lo que más vende, y la tienes de sobra.</p></div>
+      <div class="good-item"><span class="good-check">✓</span><p><strong>La entrada medida.</strong> Conoces tu CTR (1%) y tu coste por registro (8-16€). Ya miras la parte de arriba del embudo, que es más de lo que hace la mayoría.</p></div>
+    </div>
+    <p style="margin-top:24px;">Con esa base, lo que falta no es construir un negocio. Es tapar dos agujeros muy concretos. Vamos a ellos.</p>
+  </div>
+</section>
+
+<!-- CARD 4: MAPA DEL EMBUDO (CHART 1) -->
+<section class="card dark">
+  <div class="container">
+    <div class="label">01 · El mapa de tu embudo</div>
+    <h2 style="color:#fff;">Ves la entrada. No ves dónde se hace el dinero</h2>
+    <p class="chart-lead" style="color:rgba(255,255,255,0.7);margin-bottom:36px;">Tu embudo entero, de arriba abajo. En dorado, lo que mides. En oscuro, lo que va a ciegas. Fíjate en qué mitad está cada cosa.</p>
+
+    <svg viewBox="0 0 360 300" width="100%" style="max-width:400px;display:block;margin:0 auto;" font-family="Inter,sans-serif" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="12" width="300" height="44" rx="5" fill="#C9A84C"/>
+      <text x="44" y="39" font-size="13" font-weight="700" fill="#0A0A0A">Anuncio</text>
+      <text x="316" y="39" text-anchor="end" font-size="12" font-weight="700" fill="#0A0A0A">CTR 1%</text>
+      <rect x="30" y="64" width="252" height="44" rx="5" fill="#C9A84C"/>
+      <text x="44" y="91" font-size="13" font-weight="700" fill="#0A0A0A">Registro al VSL</text>
+      <text x="268" y="91" text-anchor="end" font-size="12" font-weight="700" fill="#0A0A0A">8-16€</text>
+      <line x1="20" y1="120" x2="340" y2="120" stroke="rgba(217,138,134,0.65)" stroke-width="1" stroke-dasharray="5 4"/>
+      <text x="340" y="115" text-anchor="end" font-size="10" fill="#D98A86">aquí dejas de medir</text>
+      <rect x="30" y="128" width="210" height="44" rx="5" fill="#161616" stroke="#C9A84C" stroke-width="1.3" stroke-dasharray="6 5"/>
+      <text x="44" y="155" font-size="13" font-weight="600" fill="#fff">VSL visto</text>
+      <text x="226" y="157" text-anchor="end" font-size="20" font-weight="800" fill="#C9A84C">?</text>
+      <rect x="30" y="180" width="168" height="44" rx="5" fill="#161616" stroke="#C9A84C" stroke-width="1.3" stroke-dasharray="6 5"/>
+      <text x="44" y="207" font-size="13" font-weight="600" fill="#fff">Llamada reservada</text>
+      <text x="184" y="209" text-anchor="end" font-size="20" font-weight="800" fill="#C9A84C">?</text>
+      <rect x="30" y="232" width="128" height="44" rx="5" fill="#161616" stroke="#C9A84C" stroke-width="1.3" stroke-dasharray="6 5"/>
+      <text x="44" y="259" font-size="13" font-weight="600" fill="#fff">Cierre 2-5k</text>
+      <text x="144" y="261" text-anchor="end" font-size="20" font-weight="800" fill="#C9A84C">?</text>
+    </svg>
+
+    <p class="chart-note">Mides el CTR y el coste por registro, o sea la entrada. Pero de la línea roja hacia abajo (cuántos ven el VSL, cuántos reservan llamada, cuántos cierran) no tienes ningún número. Y ahí, en esa mitad a oscuras, es exactamente donde se hacen tus ventas de 2 a 5k.</p>
+  </div>
+</section>
+
+<!-- CARD 5: FUGA 1 -->
+<section class="card">
+  <div class="container">
+    <div class="finding-card">
+      <div class="finding-num">Fuga 01 · la que manda</div>
+      <h3>La mitad de atrás va a ciegas</h3>
+      <p>Optimizas el CPL y el CTR con cuidado, pero eso es pulir el grifo de una tubería sin mirar por dónde gotea al final. Dijiste dos cosas que encajan solas: que no sabes tu tasa de cierre, y que "todavía no conviertes de forma consistente". No es casualidad. No conviertes consistente porque no ves en qué escalón se te cae la gente.</p>
+      <p>¿El VSL engancha pero no reservan? ¿Reservan pero no se presentan? ¿Se presentan pero no cierras? Son problemas distintos con soluciones distintas, y ahora mismo los tratas a todos igual: a ciegas. Con cuatro números (registro → VSL visto → % que reserva → % que cierra) dejas de adivinar y sabes exactamente dónde meter mano.</p>
+      <div class="finding-evidence"><strong>Lo que veo:</strong> Mides CTR y CPL (entrada) · No mides VSL → llamada → cierre · No conoces tu tasa de cierre · "No convierte de forma consistente".</div>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 6: FUGA 2 + CHART 2 -->
+<section class="card off-white">
+  <div class="container">
+    <div class="finding-card" style="background:#fff;">
+      <div class="finding-num">Fuga 02</div>
+      <h3>Pagas por el registro y no vuelves a hablarle</h3>
+      <p>Tu landing captura el email para dar acceso al VSL. Perfecto. El problema es lo que pasa después: nada. Al que ve el VSL y no reserva llamada en esa primera pasada (que en un funnel de llamada es casi todo el mundo) lo dejas evaporarse. Y a ese registro le pagaste entre 8 y 16 euros.</p>
+      <p>La gente no compra un programa de 2 a 5k el primer día que te conoce. Compra al tercer email, a la semana, cuando ya se fió. Sin una secuencia que rescate al que no reservó (recordarle el VSL, resolver la objeción, contar otro caso, volver a abrir la llamada), estás pagando por leads que solo trabajas una vez. Es la palanca más barata que tienes: exprimir lo que ya compraste.</p>
+      <div class="finding-evidence"><strong>Lo que veo:</strong> Registro capturado para el VSL · Sin secuencia de seguimiento visible · Sin lista de email en uso · CPL 8-16€ por registro que solo se trabaja una vez.</div>
+    </div>
+
+    <div class="money-wrap">
+      <p class="chart-lead" style="text-align:center;margin:0 auto 20px;">De cada 100 registros que pagas:</p>
+      <svg viewBox="0 0 360 165" width="100%" style="max-width:400px;display:block;margin:0 auto;" font-family="Inter,sans-serif" xmlns="http://www.w3.org/2000/svg">
+        <rect x="30" y="30" width="66" height="48" rx="4" fill="#C9A84C"/>
+        <rect x="100" y="30" width="230" height="48" rx="4" fill="#E4DFD4"/>
+        <text x="63" y="59" text-anchor="middle" font-size="13" font-weight="800" fill="#0A0A0A">unos pocos</text>
+        <text x="215" y="59" text-anchor="middle" font-size="14" font-weight="700" fill="#8a8272">la mayoría</text>
+        <text x="63" y="98" text-anchor="middle" font-size="11" fill="#999">compran ahora</text>
+        <text x="215" y="98" text-anchor="middle" font-size="11" fill="#999">no reservan, y no les vuelves a hablar</text>
+        <text x="215" y="128" text-anchor="middle" font-size="20" fill="#D98A86">↓ &nbsp; ↓ &nbsp; ↓</text>
+        <text x="215" y="150" text-anchor="middle" font-size="11" fill="#999">se evaporan</text>
+      </svg>
+      <div class="money-headline">Pagas por 100, trabajas a un puñado</div>
+      <p class="money-sub">Una secuencia recupera buena parte de "la mayoría" en las semanas siguientes, sin gastar un euro más en ads.</p>
+    </div>
+    <p class="chart-note" style="color:var(--muted);">No pongo porcentajes exactos porque hoy no los mides (eso es la Fuga 1). Pero en cualquier funnel de llamada la inmensa mayoría no reserva en la primera pasada. La diferencia entre pagar por ellos y perderlos, o pagar por ellos y rescatarlos, es una secuencia de emails.</p>
+  </div>
+</section>
+
+<!-- CARD 7: DETALLE -->
+<section class="card">
+  <div class="container">
+    <div class="label">Un detalle de oficio</div>
+    <h2>11 minutos o 13 minutos</h2>
+    <p>Tu landing promete un "vídeo de 11 minutos". Tu VSL abre diciendo "te voy a enseñar en 13 minutos". Es una tontería, y por eso te la digo: a este nivel, las tonterías son lo único que queda por pulir. Que la promesa de la landing y la del VSL digan el mismo número. Coherencia fina, de las que solo importan cuando lo demás ya está bien.</p>
+  </div>
+</section>
+
+<!-- CARD 8: EL PATRON -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">El patrón que las ata</div>
+    <h2>Buen coche, mirando solo el retrovisor de la entrada</h2>
+    <p>Las dos fugas son la misma de fondo. Tienes un embudo bien construido (avatar afinado, VSL sólido, oferta con prueba) y lo conduces mirando solo lo que entra: el CTR y el coste por registro. Del resto del viaje, ni salpicadero ni retrovisores.</p>
+    <div class="synthesis-quote">Tu embudo no está roto. Está a oscuras justo en la mitad donde se cobra.</div>
+    <p>No ves dónde se cae la gente después del registro (Fuga 1), y no recoges a la que no compra a la primera (Fuga 2). Por eso "no convierte de forma consistente": no es que el embudo sea malo, es que estás optimizando la parte que ya funciona y dejando sin tocar la parte donde está el dinero.</p>
+    <p>Y esa es la buena noticia. No hay que rehacerte nada. Hay que encender la luz de la mitad de abajo y poner la secuencia que recoge lo que ya pagas. Dos piezas, y las dos rápidas.</p>
+  </div>
+</section>
+
+<!-- CARD 9: LA SALIDA -->
+<section class="card">
+  <div class="container">
+    <div class="label">02 · La salida</div>
+    <h2>El orden</h2>
+    <p>A ti no te tengo que explicar cómo se hace cada cosa, sabes de esto. Lo que aporto es el orden y una mirada de fuera, sin el sesgo de estar dentro de tu propio embudo.</p>
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Primero, enciende la mitad de abajo</h4>
+          <p>Instrumenta el embudo entero: registro, VSL empezado y terminado, llamada reservada, presentada y cerrada. Cuatro o cinco números. Hasta que no los veas, cada cambio que hagas es una apuesta a ciegas. Con ellos, sabrás si tu problema es el VSL, la agenda o el cierre.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Después, la secuencia que rescata</h4>
+          <p>Una serie de emails para el que registró y no reservó: que vuelva al VSL, que resuelva la objeción, que vea otro caso, que reabra la llamada. Convierte el registro que ya pagas en un activo que trabaja durante semanas, no un solo día.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Y con datos, aprieta donde el número diga</h4>
+          <p>Solo cuando veas dónde se cae la gente tiene sentido tocar el VSL, la landing o la oferta. Optimizar con el número delante, no por corazonada. Ahí es donde tu cabeza de marketing se vuelve tu ventaja.</p>
+        </div>
+      </div>
+    </div>
+    <div class="synthesis-quote">Primero medir la mitad a oscuras, luego recoger lo que se evapora. En ese orden, no al revés.</div>
+    <p>No necesitas más tráfico ni un VSL nuevo. Necesitas ver el embudo entero y dejar de perder lo que ya pagas. Con lo que tienes montado, es de lo más rápido y rentable que puedes hacer.</p>
+  </div>
+</section>
+
+<!-- CARD 10: GARANTIA -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">Mi compromiso</div>
+    <h2>La garantía</h2>
+    <div class="guarantee-box">
+      <p>Sistema montado en 15 días y generando leads cualificados en 30. Si no lo conseguimos, seguimos trabajando sin coste hasta que lo hagamos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 11: CTA -->
+<section class="card dark cta-card" style="border-top:1px solid rgba(201,168,76,0.3);">
+  <div class="container">
+    <div class="label">El siguiente paso</div>
+    <div class="divider"></div>
+    <h2>Y esto es lo que haría yo</h2>
+    <p>Contigo no voy a montar el numerito de la venta, eres colega y del tema sabes. Te lo dejo claro y ya: tienes un buen embudo con dos piezas sin poner, la medición del back y la secuencia de rescate. Son justo lo mío y son rápidas. Si quieres te las monto y las dejamos funcionando, con la garantía de arriba. Y si prefieres montarlas tú, ya tienes el mapa y el orden. Como veas, sin postureo.</p>
+    <div class="cta-reply">Respóndeme por WhatsApp y lo hablamos cuando te venga bien.</div>
+    <div class="cta-or">o</div>
+    <a class="cta-btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;" href="#">Reservar una llamada</a>
+  </div>
+</section>
+
+<!-- CARD 12: SOBRE DANIEL -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">Quién te lo prepara</div>
+    <h2>Sobre Daniel</h2>
+    <div class="about-card">
+      <div class="about-photo"><img src="https://danigdecelis.github.io/factor-rh-strategy/daniel-photo.png" alt="Daniel García de Celis"></div>
+      <div class="about-body">
+        <h3>Daniel García de Celis</h3>
+        <div class="about-role">Copy Estratega</div>
+        <p>Construyo activos digitales para gente que ya tiene los resultados pero todavía no tiene el sistema que los convierte en clientes nuevos de forma predecible. Emails, landings, herramientas de captación, secuencias. No vendo método. Construyo lo que falta y se mide si funciona.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega"></div>
+  <div class="footer-text">Audit de embudo · Preparado para Alex Tsomaia<br>2026 Copy Estratega. Todos los derechos reservados.</div>
+</footer>
+
+<script>if(!sessionStorage.getItem("_t")){sessionStorage.setItem("_t","1");var _u=encodeURIComponent(navigator.userAgent);var _l=navigator.language;var _r=new URLSearchParams(window.location.search).get('r')||'';fetch("https://script.google.com/macros/s/AKfycbwC8v4oAIgA7j9OfOMxjVQ1OkfB4cBHiRLPknvz1rBFwaW8bBnYJpzBtuSHnKAyIUr6IQ/exec?prospect=Alex+Tsomaia&page=alex-tsomaia-strategy&ua="+_u+"&lang="+_l+"&r="+_r)}</script>
+
+</body>
+</html>
